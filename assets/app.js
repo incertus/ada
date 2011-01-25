@@ -108,6 +108,7 @@ var ada = function () {
         }
     }
 
+
     //-----------------------------------------------------------------------
 
     function getPrefs() {
@@ -129,6 +130,7 @@ var ada = function () {
             delete(gPrefs.defaultTheme);
         }
     }
+
     
     function setPrefs() {
         var file, fStream;
@@ -138,6 +140,7 @@ var ada = function () {
         fStream.writeUTFBytes(JSON.stringify(gPrefs)); 
         fStream.close();    
     }
+
     
     function saveAuth() {
         if (gRememberMe && !gAuthorized) {
@@ -147,6 +150,7 @@ var ada = function () {
             setPrefs();
         }
     }
+
 
     function saveBounds() {
         adaTrace('saveBounds');
@@ -158,6 +162,7 @@ var ada = function () {
         ];
         setPrefs();
     }
+
 
     //-----------------------------------------------------------------------
 
@@ -176,6 +181,7 @@ var ada = function () {
         }
         return {say: say};
     }
+
 
     //-----------------------------------------------------------------------
 
